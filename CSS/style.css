@@ -1,6 +1,7 @@
 #movies img,
 #movie img {
-    width: 100%
+    width: 100%;
+    background-color: blue;
 }
 
 @media screen and (min-width: 450px) {
