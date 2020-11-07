@@ -54,8 +54,8 @@ function movieSelected(id) {
 }
 
 function getMovie() {
-    let movieId = localStorage.getItem('searchText');
-    var API_URL = `http://www.omdbapi.com/?s=${movieId}&apikey=387cdace`; //'http://www.omdbapi.com/?i=tt3896198&apikey=387cdace'
+    let movieId = localStorage.getItem('movieId');
+    var API_URL = `http://www.omdbapi.com/?i=${movieId}&apikey=387cdace`; //'http://www.omdbapi.com/?i=tt3896198&apikey=387cdace'
     axios.get(API_URL)
         .then((response) => {
             console.log(response);
